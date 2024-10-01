@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calc">
+        <div class="otpt">
+            <output id="result">0</output>
+        </div>
+        <div class="first">
+            <button onclick="cClick()">C</button>
+            <button onclick="opeClick(this.innerHTML)">x<sup>n</sup></button>
+            <button onclick="backClick(this.innerHTML)">⌫</button>
+            <button onclick="opeClick(this.innerHTML)">÷</button>
+        </div>
+        <div class="second">
+            <button onclick="numClick(this.innerHTML)">7</button>
+            <button onclick="numClick(this.innerHTML)">8</button>
+            <button onclick="numClick(this.innerHTML)">9</button>
+            <button onclick="opeClick(this.innerHTML)">x</button>
+        </div>
+        <div class="third">
+            <button onclick="numClick(this.innerHTML)">4</button>
+            <button onclick="numClick(this.innerHTML)">5</button>
+            <button onclick="numClick(this.innerHTML)">6</button>
+            <button onclick="opeClick(this.innerHTML)">-</button>
+        </div>
+        <div class="fourth">
+            <button onclick="numClick(this.innerHTML)">1</button>
+            <button onclick="numClick(this.innerHTML)">2</button>
+            <button onclick="numClick(this.innerHTML)">3</button>
+            <button onclick="opeClick(this.innerHTML)">+</button>
+        </div>
+        <div class="fifth">
+            <button onclick="numClick(this.innerHTML)">0</button>
+            <button onclick="numClick(this.innerHTML)">.</button>
+            <button onclick="equalClick()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
