@@ -44,7 +44,7 @@ function opeClick(val) {
     if (isOpeLast()) {
         result.value = result.value.slice(0, -1) + val;
     } else {
-        result.value += val.replace('x<sup>n</sup>', '^');
+        result.value += val;
     }
 
 }
