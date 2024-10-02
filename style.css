@@ -17,11 +17,11 @@ body {
 
 #calc {
     display: grid;
-    grid-template-columns: 0px auto 0px;
+    grid-template-columns: auto;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
     width: fit-content;
+    max-width: 642px;
     box-sizing: border-box;
-    width: fit-content;
     margin-top: 15vh;
     border-radius: 20px;
     backdrop-filter: blur(8px);
@@ -44,7 +44,6 @@ output {
 .otpt {
     width: 99%;
     height: 200px;
-    grid-column: 2/3;
     border-radius: 10px;
     box-sizing: border-box;
     margin: 3px;
@@ -71,27 +70,27 @@ button:hover {
 
 .first {
     grid-row: 2/3;
-    grid-column: 2/3;
+    
 }
 
 .second {
     grid-row: 3/4;
-    grid-column: 2/3;
+    
 }
 
 .third {
     grid-row: 4/5;
-    grid-column: 2/3;
+    
 }
 
 .fourth {
     grid-row: 5/6;
-    grid-column: 2/3;
+    
 }
 
 .fifth {
     grid-row: 6/7;
-    grid-column: 2/3;
+    
 }
 
 [onclick="equalClick()"] {
@@ -100,4 +99,21 @@ button:hover {
 
 [onclick="equalClick()"]:hover {
     background-color: rgb(57, 130, 225);
+}
+
+@media only screen and (max-width:645px){
+    #calc{
+        margin-top: 0px;
+    }
+    output{
+        font-size: 75px;
+    }
+    button{
+        width: 79px;
+        height: 80px;
+        font-size: 20px;
+    }
+    #expo{
+        font-size: 16px;
+    }
 }
