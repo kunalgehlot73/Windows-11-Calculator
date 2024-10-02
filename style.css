@@ -105,6 +105,12 @@ button:hover {
     #calc{
         margin-top: 0px;
     }
+    body{
+        background: url(Media/windows-11-dark-mode-blue-stock-official-1080x2340-5630.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     output{
         font-size: 75px;
     }
